@@ -1,6 +1,7 @@
 <%=  provide(:title, "Home")  %>
 
-<h1>Home</h1>
-
-<p>This is the home page for the <%= link_to "Rails Tutorial Sample App", "http://www.railstutorial.com/" %></p>
-
+<div class="center hero-unit">
+	<h1>Welcome to the Rails Drills App</h1>
+	<p>This is the home page for the <%= link_to "Rails Tutorial Sample App", "http://www.railstutorial.com/" %></p>
+	<%= link_to "Sign Up Now!", signup_path, class: "btn btn-primary btn-large" %>
+</div>

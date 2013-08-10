@@ -1,0 +1,30 @@
+@import "bootstrap";
+
+.center {
+	text-align: center;
+}
+
+#logo {
+	float: left;
+}
+
+body {
+	padding-top: 60px;
+}
+
+footer {
+	border-top: 1px solid #eaeaea;
+}
+footer small { 
+	float: left;
+}
+
+footer ul {
+	float: right;
+	list-style: none;
+}
+
+footer ul li {
+	float: left;
+	margin-left: 10px;
+}
