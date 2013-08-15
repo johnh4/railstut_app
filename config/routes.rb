@@ -1,9 +1,14 @@
 RailstutApp::Application.routes.draw do
-  get "users/new"
   get "static_pages/home"
   get "static_pages/help"
   get "static_pages/about"
 
+
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+
+  match "/signout" => "sessions#destroy", via: "delete"
+  get "/signin", to: "sessions#new", as: "signin"
   get "/signup", to: "users#new", as: "signup"
   get "/help", to: "static_pages#help", as: "help"
   get "/about", to: "static_pages#about", as: "about"
