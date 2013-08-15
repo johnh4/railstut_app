@@ -32,3 +32,25 @@ footer li {
 	text-decoration: none;
 	margin-left: 10px;
 }
+
+.debug_dump {
+	margin-top: 45px;
+}
+
+#section_1, #section_2, #section_3 {
+	height: 200px;
+	color: white;
+	display: none;
+}
+
+#section_1 {
+	background-color: red;
+}
+
+#section_2 {
+	background-color: blue;
+}
+
+#section_3 {
+	background-color: green;
+}
