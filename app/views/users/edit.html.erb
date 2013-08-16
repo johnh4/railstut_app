@@ -1,4 +1,4 @@
-<%= provide(:title, "Sign Up") %>
+<%= provide(:title, "Edit") %>
 
 <div class="row">
 	<div class="span6 offset3">
@@ -12,5 +12,7 @@
 			<%= f.submit "Create my Account", class: "btn btn-primary" %>
 
 		<% end %>
+		<%= gravatar_for @user %>
+		<%= link_to "Change", "http://gravatar.com/emails" %>
 	</div>
 </div>
