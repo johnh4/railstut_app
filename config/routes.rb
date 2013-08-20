@@ -13,6 +13,7 @@ RailstutApp::Application.routes.draw do
 
   resources :users
   resources :sessions
+  resources :microposts, only: [:create, :destroy]
 
   root "static_pages#home"
   
