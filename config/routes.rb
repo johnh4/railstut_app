@@ -11,9 +11,14 @@ RailstutApp::Application.routes.draw do
 
   match "/signout" => "sessions#destroy", via: "delete"
 
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers, :feed
+    end
+  end
   resources :sessions
   resources :microposts, only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
 
   root "static_pages#home"
   

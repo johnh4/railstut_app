@@ -1,0 +1,14 @@
+<div class="row">
+	<aside class="span4">
+		<%= render 'shared/user_info' %>
+		<section>
+			<%= render 'shared/stats' %>
+		</section>
+	</aside>
+	<div class="span8">
+		<h3>
+			<%= @user.name %>'s Feed
+		</h3>
+		<%= render 'shared/feed' %>
+	</div>
+</div>
